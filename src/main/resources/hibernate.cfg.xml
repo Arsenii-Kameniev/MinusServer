@@ -1,0 +1,19 @@
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost/dashboard</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">Rod-Ars-2006</property>
+        <property name="hibernate.show_sql ">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="com.example.MinusServer.Models.MyUser" />
+        <mapping class="com.example.MinusServer.Models.Card" />
+        <mapping class="com.example.MinusServer.Models.Category" />
+        <mapping class="com.example.MinusServer.Models.OrderStatus" />
+        <mapping class="com.example.MinusServer.Models.Product" />
+        <mapping class="com.example.MinusServer.Models.Orders" />
+
+    </session-factory>
+</hibernate-configuration>
